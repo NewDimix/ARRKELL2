@@ -1,0 +1,103 @@
+.feedback
+    max-width 971
+    margin-left auto
+    margin-right auto
+    background-color #2169D5
+    color white
+    text-align center
+    padding 21px 10px
+    font-size 0
+
+    @media (min-width 480px)
+        padding-top 24px
+        padding-bottom 24px
+
+    @media (min-width 768px)
+        padding-top 27px
+        padding-bottom 27px
+
+    @media (min-width 992px)
+        padding-top 30px
+        padding-bottom 30px
+
+    @media (min-width 1170px)
+        padding-top 33px
+        padding-bottom 33px
+
+    &__title
+        position relative
+        margin-bottom 1em
+
+    &__email, &__call
+        font-family OpenSans
+        font-weight 300
+        line-height 1.9
+        font-size 16px
+        display block
+
+        @media (min-width 480px)
+            font-size 18px
+
+        @media (min-width 768px)
+            font-size 21px
+            {ibm}
+
+        @media (min-width 992px)
+            font-size 27px
+
+        @media (min-width 1170px)
+            font-size 30px
+
+        a
+            color white
+
+            &:before
+                border-color white
+
+    &__email
+        @media (min-width 768px)
+            margin-right 50px
+
+        a
+            text-decoration none
+
+    &__call
+        button
+            padding-right .6em
+            color white
+            position relative
+            background none
+            border none
+            font-family OpenSans
+            font-weight 300
+            cursor pointer
+
+            &:focus
+                outline none
+
+            &:before
+                content ''
+                position absolute
+                right 0
+                top 50%
+                transform rotate(45deg) translateY(-50%)
+                width 6px
+                height 6px
+                border-top 1px solid white
+                border-right 1px solid white
+
+                @media (min-width 480px)
+                    width 7px
+                    height 7px
+
+                @media (min-width 768px)
+                    width 8px
+                    height 8px
+
+                @media (min-width 992px)
+                    width 9px
+                    height 9px
+
+                @media (min-width 1170px)
+                    width 10px
+                    height 10px

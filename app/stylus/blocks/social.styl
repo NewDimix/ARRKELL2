@@ -1,0 +1,84 @@
+.social
+    padding-left 0
+    list-style none
+    font-size 0
+    margin-top 0
+    margin-bottom 0
+
+    li
+        {ibm}
+        position relative
+        transition all .1s ease
+        cursor pointer
+        opacity .3
+
+        &:hover
+            opacity 1
+
+        &:not(:last-child)
+            margin-right 30px
+
+            @media (min-width 480px)
+                margin-right 33px
+
+            @media (min-width 768px)
+                margin-right 36px
+
+            @media (min-width 992px)
+                margin-right 38px
+
+            @media (min-width 1170px)
+                margin-right 40px
+
+    &__item
+        {ibm}
+        width 21px
+        height 35px
+        background-position center
+        background-size 100%
+        background-repeat no-repeat
+        transition all .1s ease
+
+        @media (min-width 480px)
+            width 25px
+            height 42px
+
+        @media (min-width 768px)
+            width 29px
+            height 52px
+
+        @media (min-width 992px)
+            width 34px
+            height 62px
+
+        @media (min-width 1170px)
+            width 38px
+            height 72px
+
+        &:focus
+            outline none
+            box-shadow inset 0 0 0 1px white
+
+        &_facebook
+            background-image inline('facebook.svg')
+
+        &_vkontakte
+            background-image inline('vk.svg')
+
+        &_telegram
+            background-image inline('telegram.svg')
+
+    &_black
+        .social
+            &__item
+                &_facebook
+                    background-image inline('facebook-g.svg')
+
+                &_vkontakte
+                    background-image inline('vk-g.svg')
+
+                &_telegram
+                    background-image inline('telegram-g.svg')
+
+
+

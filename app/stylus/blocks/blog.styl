@@ -1,0 +1,248 @@
+.blog
+    padding-bottom 200px
+
+    &__header
+        position relative
+        overflow hidden
+        margin-bottom 45px
+        padding-bottom 50px
+
+        @media (min-width 910px)
+            padding-bottom 0
+
+    &__title
+        {ibb}
+        margin-right .9em
+        margin-bottom 20px
+        line-height 1
+
+        @media (min-width 910px)
+            margin-bottom 0
+
+    &__tabs
+        padding-left 0
+        list-style none
+        font-family AlegreyaSans
+        font-weight 300
+        margin-bottom 0
+        margin-top 0
+        font-size 16px
+
+        @media (min-width 480px)
+            font-size 21px
+
+        @media (min-width 768px)
+            font-size 25px
+
+        @media (min-width 910px)
+            {ibb}
+
+        @media (min-width 992px)
+            font-size 27px
+
+        @media (min-width 1170px)
+            font-size 30px
+
+        li
+            {ibt}
+            padding-left .5em
+            padding-right .5em
+            opacity .3
+            transition all .3s ease
+            cursor pointer
+
+            &.active
+                color #2169D5
+                opacity 1
+
+    &__search-icon
+        height 20px
+        width 20px
+        background-image inline('search-icon.svg')
+        background-position center
+        background-repeat no-repeat
+        background-size contain
+        {ibm}
+        position absolute
+        left 0
+        top 50%
+        transform translateY(-20%)
+
+        @media (min-width 480px)
+            height 22px
+            width 22px
+
+        @media (min-width 768px)
+            height 24px
+            width 24px
+
+        @media (min-width 992px)
+            height 26px
+            width 26px
+
+        @media (min-width 1170px)
+            height 30px
+            width 30px
+
+    &__search-close
+        width 30px
+        height 30px
+        position absolute
+        right 0
+        top 50%
+        transform translateY(-50%)
+        display none
+
+        span
+            display block
+            width 100%
+            height 1px
+            background-color black
+            position absolute
+            top 50%
+
+            &:first-child
+                transform rotate(45deg) translateY(-50%)
+
+            &:nth-child(2)
+                transform rotate(-45deg) translateY(-50%)
+
+    &__search
+        font-size 0
+        position absolute
+        width 100%
+        right 0
+        bottom 0
+        transform translateX(100%) translateX(-60px)
+        padding-left 20px
+        transition all .5s ease
+        cursor pointer
+        background-color #fff
+        border-bottom 1px solid transparent
+
+        @media (min-width 480px)
+            padding-left 25px
+            transform translateX(100%) translateX(-80px)
+
+        @media (min-width 768px)
+            padding-left 30px
+            transform translateX(100%) translateX(-100px)
+
+        @media (min-width 992px)
+            padding-left 35px
+            transform translateX(100%) translateX(-105px)
+
+        @media (min-width 1170px)
+            padding-left 40px
+            transform translateX(100%) translateX(-115px)
+
+        input
+            height 50px
+            padding-top 15px
+            {ibm}
+            border none
+            font-family AlegreyaSans
+            font-weight 300
+            color #404040
+            background-color #fff
+            width 100%
+            opacity .3
+            cursor pointer
+            font-size 16px
+
+            @media (min-width 480px)
+                font-size 21px
+
+            @media (min-width 768px)
+                font-size 25px
+
+            @media (min-width 992px)
+                font-size 27px
+
+            @media (min-width 1170px)
+                font-size 30px
+
+            &:focus
+                outline none
+
+        &_open
+            transform translateX(0) !important
+            border-bottom-color black
+            padding-left 0 !important
+
+            .blog__search-icon
+                width 0
+
+            input
+                opacity 1
+                cursor text
+
+    &__content
+        font-size 0
+        margin-left -15px
+        margin-right -15px
+        margin-bottom 74px
+        display none
+
+        &_active
+            display block
+
+    &__row
+        margin-bottom 34px
+
+        @media (min-width 480px)
+            margin-bottom 44px
+
+        @media (min-width 768px)
+            margin-bottom 54px
+
+        @media (min-width 992px)
+            margin-bottom 64px
+
+        @media (min-width 1170px)
+            margin-bottom 74px
+
+    &__item
+        padding-left 15px
+        padding-right 15px
+        margin-bottom 34px
+
+        @media (min-width 480px)
+            margin-bottom 44px
+
+        @media (min-width 768px)
+            margin-bottom 0
+
+        &_big
+            @media (min-width 910px)
+                {ibt}
+                width 50%
+
+
+        &_small
+            @media (min-width 910px)
+                {ibt}
+                width 25%
+
+    &__btn
+        text-align center
+
+        button
+            padding-left 60px
+            padding-right 60px
+            height 57px
+            background none
+            border 1px solid #404040
+            font-family OpenSans
+            font-weight 300
+            font-size 30px
+            cursor pointer
+            transition all .3s ease
+
+            &:hover
+                background-color #404040
+                color white
+
+            &:focus
+                outline none
+

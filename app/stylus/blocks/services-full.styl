@@ -1,0 +1,171 @@
+.services-full
+    position relative
+    padding-top 100px
+    padding-bottom 150px
+
+    @media (min-width 480px)
+        padding-bottom 160px
+
+    @media (min-width 768px)
+        padding-bottom 170px
+
+    @media (min-width 992px)
+        padding-bottom 180px
+
+    @media (min-width 1170px)
+        padding-bottom 200px
+
+    &__header
+        margin-bottom 10px
+
+        @media (min-width 480px)
+            margin-bottom 15px
+
+        @media (min-width 768px)
+            margin-bottom 20px
+
+        @media (min-width 992px)
+            margin-bottom 25px
+
+        @media (min-width 1170px)
+            margin-bottom 30px
+
+    &__title
+        {ibm}
+        margin-right .6em
+
+    &__line
+        {ibm}
+        width 8%
+        height 1px
+        background-color #404040
+
+        @media (min-width 480px)
+            height 2px
+
+        @media (min-width 768px)
+            height 3px
+
+        @media (min-width 992px)
+            height 4px
+
+    &__tabs
+        {ibm}
+        list-style none
+        padding-left 0
+        margin-top 0
+        margin-bottom 0
+
+        li
+            {ibm}
+            padding-left .5em
+            padding-right .5em
+            opacity .3
+            transition all .3s ease
+            cursor pointer
+
+            &.active
+                opacity 1
+
+    &__content
+        transition all .3s ease
+
+    &__item
+        position relative
+        display none
+
+        &.active
+            display block
+
+    &__subtabs
+        list-style none
+        padding-left 0
+        border-top 1px solid rgba(64, 64, 64, 0.1)
+        border-bottom 1px solid rgba(64, 64, 64, 0.1)
+        padding-top 10px
+        padding-bottom 10px
+        margin-left -10px
+        margin-right -10px
+        cursor pointer
+        counter-reset count
+
+        @media (min-width 910px)
+            list-style decimal
+            position absolute
+            left 0
+            top 0
+            width 300px
+            border-top none
+            border-bottom none
+            padding-top 0
+            padding-bottom 0
+            margin-left 0
+            margin-right 0
+
+        li
+            font-family OpenSans
+            font-weight 300
+            font-size 18px
+            line-height 2
+            opacity 1
+            {ibt}
+            padding-left 10px
+            padding-right 10px
+            counter-increment count
+
+            @media (min-width 910px)
+                display block
+                padding-left 0
+                padding-right 0
+
+                &:before
+                    content '0' counter(count) '. '
+
+                &:not(:last-child)
+                    margin-bottom 1em
+
+            &.active
+                opacity .3
+
+    &__text
+        display none
+        max-width 1000px
+
+        @media (min-width 910px)
+            padding-left 300px
+
+        &.active
+            display block
+
+        h3
+            font-weight 400
+            margin-top 0
+            margin-bottom 10px
+
+        a
+            {ibm}
+            font-size 16px
+            font-family OpenSans
+            font-weight 300
+            line-height 2em
+            background #2169D5
+            border none
+            color white
+            padding-left 18px
+            padding-right 18px
+
+            @media (min-width 448px)
+                font-size 18px
+
+            @media (min-width 768px)
+                font-size 22px
+
+            @media (min-width 992px)
+                font-size 26px
+
+            @media (min-width 1170px)
+                font-size 30px
+
+            &:before
+                display none
+

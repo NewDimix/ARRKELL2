@@ -1,0 +1,58 @@
+.teams
+    position relative
+
+    &__title
+        margin-bottom -1.5em
+        margin-top 1.5em
+        text-align left
+        color white
+        padding-left 10px
+
+        @media (min-width 768px)
+            margin-bottom .6em
+            margin-top 0
+            color #404040
+            text-align center
+            padding-left 0
+            margin-left 1.8em
+
+    &__items-wrap
+        position relative
+        min-height 337px
+
+        @media (min-width 480px)
+            height 355px
+
+        @media (min-width 768px)
+            height 327px
+
+        @media (min-width 992px)
+            height 364px
+
+        @media (min-width 1170px)
+            height 398px
+
+    &__item
+        width 100%
+        position absolute
+        height 100%
+        top 0
+        left 0
+        display none
+
+        &_show
+            display block
+
+    .slick-list.draggable
+        overflow visible !important
+
+    .arrows
+        &__prev
+            @media (min-width 768px)
+                left 49%
+                margin-left -30px
+
+        &__next
+            @media (min-width 768px)
+                left 50%
+                margin-left 105px

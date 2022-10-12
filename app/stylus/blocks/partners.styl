@@ -1,0 +1,40 @@
+.partners
+    font-size 0
+
+    &__title
+        margin-bottom .4em
+
+    &__text
+        display block
+        width 100%
+        margin-bottom .8em
+
+        @media (min-width 768px)
+            max-width 570px
+            {ibm}
+            margin-bottom 0
+            width 50%
+
+        span
+            position relative
+            cursor pointer
+
+            &:before
+                content ''
+                width 100%
+                position absolute
+                bottom 10%
+                left 0
+                height 1px
+                background-color #404040
+
+    &__logo
+        text-align center
+
+        @media (min-width 768px)
+            {ibm}
+            width 50%
+
+        img
+            width 60%
+            max-width 300px

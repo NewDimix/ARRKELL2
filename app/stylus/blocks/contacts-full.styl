@@ -1,0 +1,83 @@
+.contacts-full
+    font-size 0
+    padding-top 100px
+    padding-bottom 150px
+
+    @media (min-width 480px)
+        padding-bottom 160px
+
+    @media (min-width 768px)
+        padding-bottom 170px
+
+    @media (min-width 992px)
+        padding-bottom 180px
+
+    @media (min-width 1170px)
+        padding-bottom 200px
+
+    &__title
+        margin-bottom 20px
+
+    &__item
+        @media (min-width 910px)
+            {ibt}
+            width 30%
+
+        &:not(:last-child)
+            margin-right 5%
+            margin-bottom 30px
+
+            @media (min-width 910px)
+                margin-bottom 0
+
+    &__subtitle
+        h3
+            font-family OpenSans
+            font-weight 300
+            opacity .3
+            margin-top 0
+            margin-bottom 0
+            font-size 14px
+
+            @media (min-width 480px)
+                font-size 16px
+
+            @media (min-width 768px)
+                font-size 18px
+
+            @media (min-width 992px)
+                font-size 20px
+
+            @media (min-width 1170px)
+                font-size 22px
+
+    &__text
+        font-family OpenSans
+        font-weight 300
+        font-size 16px
+        line-height 2.1
+
+        @media (min-width 480px)
+            font-size 18px
+
+        @media (min-width 768px)
+            font-size 22px
+
+        @media (min-width 992px)
+            font-size 26px
+
+        @media (min-width 1170px)
+            font-size 30px
+
+        span
+            &:not(:last-child)
+                margin-right 1em
+
+            &.nowrap
+                white-space nowrap
+
+    br
+        display none
+
+        @media (min-width 910px)
+            display block

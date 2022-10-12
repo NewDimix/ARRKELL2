@@ -1,0 +1,172 @@
+.menu
+    &__btn
+        background none
+        border none
+        width 30px
+        height 20px
+        position relative
+        margin-right 33px
+        margin-top 4px
+
+        @media (min-width 910px)
+            display none
+            margin-top 0
+
+        &:focus
+            outline none
+
+        span
+            display block
+            position absolute
+            height 2px
+            width 100%
+            border-radius 9px
+            opacity 1
+            left 0
+            transform rotate(0deg)
+            transition .25s ease-in-out
+
+            &:nth-child(1)
+                top 0
+
+            &:nth-child(2)
+                top 9px
+                width 18px
+
+            &:nth-child(3)
+                top 18px
+
+        &_open
+            span
+                &:nth-child(1)
+                    top 9px
+                    transform rotate(135deg)
+
+                &:nth-child(2)
+                    opacity 0
+                    left -60px
+
+                &:nth-child(3)
+                    top 9px
+                    transform rotate(-135deg)
+
+            &+.menu__content
+                .menu__link
+                    opacity 1
+
+
+    &__content
+        position fixed
+        top 0
+        left 0
+        right 0
+        bottom 0
+        width 100%
+        height 100%
+        background-color #fff
+        overflow auto
+        display none
+
+        @media (min-width 910px)
+            position static
+            display block !important
+            background-color transparent
+            overflow visible
+
+    &__ul
+        padding-left 0
+        list-style none
+        margin-top 0
+        margin-bottom 0
+        {ibt}
+
+        @media (min-width 910px)
+            display block
+            position static
+            transform translate(0)
+
+        li
+            @media (min-width 910px)
+                {ibm}
+
+            &:not(:last-child)
+                margin-bottom 20px
+
+                @media (min-width 910px)
+                    margin-bottom 0
+
+            &:nth-child(1)
+                .menu__link
+                    transition-delay .05s
+
+            &:nth-child(2)
+                .menu__link
+                    transition-delay .1s
+
+            &:nth-child(3)
+                .menu__link
+                    transition-delay .15s
+
+            &:nth-child(4)
+                .menu__link
+                    transition-delay .2s
+
+            &:nth-child(5)
+                .menu__link
+                    transition-delay .25s
+
+            &:nth-child(6)
+                .menu__link
+                    transition-delay .3s
+
+            &:nth-child(7)
+                .menu__link
+                    transition-delay .35s
+
+    &__link
+        padding-left 14px
+        padding-right 14px
+        text-decoration none
+        font-size 40px
+        font-weight 300
+        transition all 1s ease
+        opacity 0
+
+        @media (min-width 910px)
+            font-size 18px
+            opacity 1
+
+        &_active
+            opacity .3
+
+    &_black
+        .menu
+            &__btn
+                span
+                    background-color black
+
+                &_open
+                    span
+                        background-color black
+
+            &__link
+                color #404040
+
+                @media (min-width 910px)
+                    color #404040
+
+    &_white
+        .menu
+            &__btn
+                span
+                    background-color white
+
+                &_open
+                    span
+                        background-color black
+
+            &__link
+                color #404040
+
+                @media (min-width 910px)
+                    color white

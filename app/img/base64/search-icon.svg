@@ -1,0 +1,13 @@
+<svg width="36" height="35" viewBox="0 0 36 35" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="Canvas" fill="none">
+<g id="Group" opacity="0.3">
+<g id="Line">
+<line y1="-0.5" x2="20" y2="-0.5" transform="matrix(0.707107 0.707107 -0.707107 0.707107 20.5061 20.6465)" stroke="black"/>
+</g>
+<g id="Ellipse">
+<circle cx="10" cy="10" r="9.5" transform="matrix(0.707107 0.707107 -0.707107 0.707107 14.1421 0.14035)" stroke="black"/>
+</g>
+</g>
+</g>
+</svg>
+

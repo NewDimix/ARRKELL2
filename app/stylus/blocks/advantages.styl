@@ -1,0 +1,88 @@
+.advantages
+    position relative
+    font-size 0
+
+    &__img
+        {ibm}
+        width 50%
+        height 300px
+        transform translateX(-100px)
+        transition all .4s ease
+        opacity 0
+
+        @media (min-width 480px)
+            height 380px
+
+        @media (min-width 768px)
+            height 460px
+            width 40%
+
+        @media (min-width 992px)
+            height 540px
+
+        @media (min-width 1170px)
+            height 620px
+
+    &__content
+        {ibm}
+        width 60%
+        font-size 20px
+        color #404040
+        margin-left -100px
+        position relative
+        max-width 600px
+        padding-top 70px
+        padding-bottom 70px
+        margin-top 250px
+
+        @media (min-width 768px)
+            margin-top 0
+            width 60%
+            margin-left -50px
+
+    &__title
+        transform translateY(50px)
+        transition all .4s ease
+        opacity 0
+
+    &__text
+        transform translateY(50px)
+        transition all .4s ease
+        opacity 0
+
+    .arrows
+        &__prev
+            left 50%
+            margin-left -100px
+
+            @media (min-width 768px)
+                left 40%
+                margin-left -45px
+
+        &__next
+            left 50%
+            margin-left 0px
+
+            @media (min-width 480px)
+                margin-left 20px
+
+            @media (min-width 768px)
+                left 40%
+                margin-left 103px
+
+.slick-active
+    .advantages
+        &__img
+            transition all .4s ease .8s
+            transform translateX(0)
+            opacity 1
+
+        &__title
+            transition all .4s ease 1.05s
+            transform translateY(0)
+            opacity 1
+
+        &__text
+            transition all .4s ease 1.15s
+            transform translateY(0)
+            opacity 1

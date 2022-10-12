@@ -1,0 +1,43 @@
+.arkell
+    text-align center
+
+    &__title
+        margin-bottom 15px
+        position relative
+        {ibt}
+
+        @media (min-width 480px)
+            margin-bottom 20px
+
+        @media (min-width 768px)
+            margin-bottom 25px
+
+        @media (min-width 992px)
+            margin-bottom 33px
+
+        @media (min-width 1170px)
+            margin-bottom 44px
+
+        &:before, &:after
+            content ''
+            width 50px
+            height 1px
+            background-color #404040
+            position absolute
+            top 50%
+            transform translateY(-50%)
+
+            @media (min-width 480px)
+                width 70px
+
+        &:before
+            left -70px
+
+            @media (min-width 480px)
+                left -100px
+
+        &:after
+            right -70px
+
+            @media (min-width 480px)
+                right -100px

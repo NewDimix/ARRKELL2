@@ -1,0 +1,77 @@
+@@include('elements/contacts/page-start.html')
+<header class="header">
+    <div class="container">
+        <div class="header__row">
+            <div class="header__logo">
+@@include('elements/contacts/logo.html')
+            </div>
+
+            <div class="header__language header__language_black">
+                <button>RU</button>
+                <ul>
+                    <li><a href="#">RU</a></li>
+                    <li><a href="#">EN</a></li>
+                </ul>
+            </div>
+
+            <div class="header__menu js-header-menu">
+@@include('elements/contacts/menu.html')
+            </div>
+
+            <div class="header__phone js-phone">
+                <span>+7 800 100 80 65</span>
+            </div>
+        </div>
+    </div>
+</header>
+
+<main class="main">
+    <div class="container section">
+        <div class="main__contacts">
+            <div class="contacts-full">
+                <div class="contacts-full__title section__title">
+                    <h2>Контакты</h2>
+                </div>
+
+                <div class="contacts-full__item section__text">
+                    <div class="contacts-full__subtitle">
+                        <h3>Адрес</h3>
+                    </div>
+
+                    <div class="contacts-full__text">
+                        <span>Россия, Москва, Угрешская 2с11</span>
+                    </div>
+                </div>
+
+                <div class="contacts-full__item section__text">
+                    <div class="contacts-full__subtitle">
+                        <h3>Номер телефона</h3>
+                    </div>
+
+                    <div class="contacts-full__text">
+                        <span class="nowrap">+7 985 309 16 12</span><br>
+                        <span class="nowrap">+7 800 100 80 65</span>
+                    </div>
+                </div>
+
+                <div class="contacts-full__item section__text">
+                    <div class="contacts-full__subtitle">
+                        <h3>Почта</h3>
+                    </div>
+
+                    <div class="contacts-full__text">
+                        <span>mail@arkell.ru</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<footer class="footer">
+    <div class="footer__fullmap">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d778.3400312849831!2d8.068770990492837!3d50.39482484477787!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1525247822598" width="800" height="600" frameborder="0" style="border:0; -webkit-filter: grayscale(100%);
+filter: grayscale(100%);" allowfullscreen></iframe>
+    </div>
+</footer>
+@@include('elements/page-end.html')

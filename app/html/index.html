@@ -1,0 +1,96 @@
+@@include('elements/index/page-start.html')
+<header class="header header_main js-header">
+    <video autoplay loop muted>
+        <source src="video/header-bg.mp4" type="video/mp4">
+        <source src="video/header-bg.webm" type="video/webm">
+        <source src="video/header-bg.ogv" type="video/ogg">
+    </video>
+    <div class="header__bg"></div>
+    <div class="container">
+        <div class="header__row">
+            <div class="header__logo">
+@@include('elements/index/logo.html')
+            </div>
+
+            <div class="header__language header__language_white">
+                <button>RU</button>
+                <ul>
+                    <li><a href="#">RU</a></li>
+                    <li><a href="#">EN</a></li>
+                </ul>
+            </div>
+
+            <div class="header__menu js-header-menu">
+@@include('elements/index/menu.html')
+            </div>
+
+            <div class="header__phone js-phone">
+                <span>+7 800 100 80 65</span>
+            </div>
+        </div>
+
+        <div class="header__content js-header-content">
+            <div class="header__title">
+                <h1>Решайте задачи вместе с Arkell IT-solution</h1>
+            </div>
+
+            <div class="header__subtitle">
+                <p>Все что было сложно, станет проще</p>
+            </div>
+
+            <button class="header__btn js-form-btn">Связаться с нами</button>
+
+            <form action="#" class="header__form contact-form js-contact-form">
+                <div class="contact-form__content">
+                    <label class="contact-form__text" for="number">Ваш номер телефона</label>
+                    <input class="contact-form__input js-input-phone" id="number" type="text">
+                    <input class="contact-form__btn" type="submit" value="Заказать звонок">
+                </div>
+                <button class="contact-form__close js-form-btn"></button>
+            </form>
+        </div>
+    </div>
+
+    <div class="header__cookie">
+        <div class="container">
+            <div class="header__cookie-text">
+                <p>Мы используем cookie для улучшения взаимодействия с сайтом</p>
+            </div>
+
+            <div class="header__cookie-btns">
+                <button>Принять условия</button>
+                <a href="#">Подробнее</a>
+            </div>
+        </div>
+    </div>
+</header>
+
+<main class="main main_index">
+    <div class="main__projects section">
+@@include('elements/index/projects.html')
+    </div>
+
+    <div class="main__services section">
+@@include('elements/index/services.html')
+    </div>
+
+    <div class="main__partners section">
+@@include('elements/index/partners.html')
+    </div>
+
+    <div class="main__teams section">
+@@include('elements/index/teams.html')
+    </div>
+</main>
+
+<footer class="footer">
+    <div class="footer__contacts">
+@@include('elements/index/contacts.html')
+    </div>
+
+    <div class="footer__map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d778.3400312849831!2d8.068770990492837!3d50.39482484477787!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1525247822598" width="800" height="600" frameborder="0" style="border:0; -webkit-filter: grayscale(100%);
+filter: grayscale(100%);" allowfullscreen></iframe>
+    </div>
+</footer>
+@@include('elements/page-end.html')

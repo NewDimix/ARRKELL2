@@ -1,0 +1,43 @@
+.logo
+    text-align center
+    border-radius 5px
+    position relative
+    width 84px
+    height 20px
+    {ibb}
+
+    @media (min-width 910px)
+        width 125px
+        height 29px
+
+    &:focus
+        outline none
+        box-shadow 0 0 0 1px rgba(255, 255, 255, 0.3)
+
+    img
+        {ibb}
+        position absolute
+        top 0
+        left 0
+        transition all .3 ease
+
+    &_white
+        .logo__black
+            opacity 0
+
+        .logo__white
+            opacity 1
+
+    &_black
+        .logo__black
+            opacity 1
+
+        .logo__white
+            opacity 0
+
+    &_open
+        .logo__black
+            opacity 1
+
+        .logo__white
+            opacity 0

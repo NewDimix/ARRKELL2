@@ -1,0 +1,53 @@
+.footer
+    background-color #404040
+    font-size 0
+    position relative
+    overflow hidden
+
+    &__contacts
+        background-color #404040
+
+        @media (min-width 768px)
+            {ibm}
+            width 55%
+
+    &__map
+        display none
+        position absolute
+        height 100%
+
+        @media (min-width 768px)
+            {ibm}
+            width 45%
+
+        iframe
+            top 0
+            right 0
+            left 0
+            bottom 0
+            position absolute
+            height 100%
+            width 100%
+
+    &__fullmap
+        height 375px
+        position relative
+
+        @media (min-width 480px)
+            height 390px
+
+        @media (min-width 768px)
+            height 405px
+
+        @media (min-width 992px)
+            height 420px
+
+        @media (min-width 1170px)
+            height 450px
+
+        iframe
+            position absolute
+            width 100%
+            height 100%
+            top 0
+            left 0

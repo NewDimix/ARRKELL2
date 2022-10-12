@@ -1,0 +1,133 @@
+.services
+    position relative
+
+    .container
+        position static
+
+    &__header
+        margin-bottom 12px
+
+        @media (min-width 480px)
+            margin-bottom 16px
+
+        @media (min-width 768px)
+            margin-bottom 19px
+
+        @media (min-width 992px)
+            margin-bottom 22px
+
+        @media (min-width 1170px)
+            margin-bottom 25px
+
+    &__title
+        {ibm}
+        margin-right .6em
+
+    &__line
+        {ibm}
+        width 9%
+        height 1px
+        background-color #404040
+
+        @media (min-width 480px)
+            height 2px
+
+        @media (min-width 768px)
+            height 3px
+
+        @media (min-width 992px)
+            height 4px
+
+    &__tabs
+        {ibm}
+        list-style none
+        padding-left 0
+        margin-top 0
+        margin-bottom 0
+
+        li
+            {ibm}
+            padding-left .5em
+            padding-right .5em
+            opacity .3
+            transition all .3s ease
+            cursor pointer
+
+            &.active
+                opacity 1
+
+    &__content
+        padding-left 5.6em
+        transition all .3s ease
+
+    &__text
+        display none
+        max-width 700px
+
+        &.active
+            display block
+
+            &+.services__icon
+                right -80px
+                opacity 1
+                transition all 1s ease .5s
+
+                @media (min-width 480px)
+                    right -110px
+
+                @media (min-width 768px)
+                    right -130px
+
+                @media (min-width 992px)
+                    right -150px
+
+        a
+            position relative
+
+    &__icon
+        position absolute
+        right -500px
+        width 278px
+        height 278px
+        background-repeat no-repeat
+        background-position center
+        background-size contain
+        top 100px
+        opacity 0
+        transition all 1s ease
+
+        @media (min-width 480px)
+            width 358px
+            height 358px
+
+        @media (min-width 768px)
+            width 458px
+            height 458px
+
+        @media (min-width 992px)
+            width 545px
+            height 545px
+
+        &_2
+            background-image inline('BPA-icon.svg')
+
+        &_1
+            background-image inline('mobile-icon.svg')
+            animation-name rotateIcon
+            animation-iteration-count infinite
+            animation-duration 30s
+            animation-fill-mode both
+            animation-timing-function linear
+
+        &_3
+            background-image inline('blockchain-icon.svg')
+
+@keyframes rotateIcon
+    from
+        transform rotate(0)
+
+    to
+        transform rotate(360deg)
+
+
+
